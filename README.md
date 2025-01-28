@@ -1,4 +1,4 @@
-Scripts to use YOLOX to detect rice flower openings.
+Scripts for detecting rice flower openings using YOLOX
 
 **train.split.py**
 
