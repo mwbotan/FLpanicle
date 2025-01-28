@@ -20,13 +20,15 @@ def get_exif(image_path):
 
 model = 'YOLOX/yolox_s.onnx'
 
-output_dir ='onnx_out_woBox'
+#Output Directory
+output_dir ='onnx_out'
 csv_dir ='csv_out'
 
-
+#Directory includding timelapse images
 target_dir = ['./timelapse/220801','./timelapse/220813','./timelapse/220823','./timelapse/220904','./timelapse/220914','./timelapse/220922']
-x_margin = [810, 928, 1064, 888, 992,748]
 
+#Position setting for detection ROI (2800x2800)
+x_margin = [810, 928, 1064, 888, 992,748]
 yL=500
 
 dfArea=pd.DataFrame(columns = ["date","left","right"])
@@ -107,12 +109,9 @@ for n in range(len(target_dir)):
                         dfc = dfc[dfc['score'] > 0.7]
                         for n in range(len(dfc)):
                             a=1+1
-                            #cv2.rectangle(imgS,(int(dfc.iloc[n,3]),int(dfc.iloc[n,4])),(int(dfc.iloc[n,5]),int(dfc.iloc[n,6])),color=(255, 0, 255),thickness=5)
                         if j < 2:
-                            #areaL=areaL+sum((df["x-max"]-df["x-min"])*(df["y-max"]-df["y-min"]))
                             areaL=areaL+sum(dfc["y-max"]-dfc["y-min"])
                         else:
-                            #areaR=areaR+sum((df["x-max"]-df["x-min"])*(df["y-max"]-df["y-min"]))
                             areaR=areaR+sum(dfc["y-max"]-dfc["y-min"])
 
                         df["x-min"]=df["x-min"]+700*j
