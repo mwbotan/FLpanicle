@@ -16,8 +16,8 @@ Scripts for detecting rice flower openings using YOLOX
 
 COCO format training data
  
- https://drive.google.com/file/d/1-UIa2l6U8zI3UsJUrYiGwcXr950USKSB/view?usp=sharing
+ https://drive.google.com/file/d/1-UIa2l6U8zI3UsJUrYiGwcXr950USKSB
 
 Trained yolox_x model coverted to ONNX format
  
- https://drive.google.com/file/d/1-anoV9C5lyDZ-BdNDGVxQy5ZKESzECkQ/view?usp=sharing
+ https://drive.google.com/file/d/1-anoV9C5lyDZ-BdNDGVxQy5ZKESzECkQ
