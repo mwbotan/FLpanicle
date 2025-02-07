@@ -11,3 +11,10 @@ Scripts for detecting rice flower openings using YOLOX
 **detect.py**
 
  Detect flower openings in timelapse images and calculate the feature of each detected region.
+
+**Data sets**
+COCO format training data
+ https://drive.google.com/file/d/1-UIa2l6U8zI3UsJUrYiGwcXr950USKSB/view?usp=sharing
+
+Trained yolox_x model coverted to ONNX format
+ https://drive.google.com/file/d/1-anoV9C5lyDZ-BdNDGVxQy5ZKESzECkQ/view?usp=sharing
